@@ -1,0 +1,220 @@
+/* Core Viewport Container Blueprint */
+.ui-wrapper {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 80px 24px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Header Text Alignments */
+.ui-header {
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.ui-subheading {
+    font-size: 32px;
+    font-weight: 400;
+    color: #000000;
+    margin: 0 0 4px 0;
+    letter-spacing: -0.5px;
+}
+
+.ui-mainheading {
+    font-size: 46px;
+    font-weight: 700;
+    color: #000000;
+    margin: 0;
+    letter-spacing: -1px;
+}
+
+/* Strict Layout Definition For Cards Grid */
+.ui-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    margin-bottom: 56px;
+}
+
+/* Exact Shadow and Border Properties of the Graphic Components */
+.ui-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    background: #ffffff;
+    border: 1px solid #eaeaea;
+    border-radius: 12px;
+    padding: 36px 32px;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.02);
+    box-sizing: border-box;
+}
+
+/* Nested Layer Stack For Graphic Avatars and Badges */
+.ui-graphic-node {
+    position: relative;
+    flex-shrink: 0;
+    margin-top: 4px;
+}
+
+.ui-node-number {
+    position: absolute;
+    top: 10px;
+    right: -2px;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 13px;
+    font-weight: 600;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.12);
+    z-index: 5;
+}
+
+/* Translucent Halo Ring Overlay */
+.ui-outer-ring {
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    background: rgba(222, 237, 255, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Solid Blue Radial Base Sphere */
+.ui-inner-sphere {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background: radial-gradient(circle at center, #ffffff 0%, #d8e8ff 100%);
+    border: 1px solid rgba(198, 219, 252, 0.6);
+    box-shadow: inset 0px -2px 6px rgba(180, 205, 245, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.ui-avatar {
+    width: 26px;
+    height: 26px;
+    object-fit: contain;
+}
+
+/* Card Body Column Styling */
+.ui-card-body {
+    flex: 1;
+}
+
+.ui-card-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
+    line-height: 1.4;
+    margin: 0 0 10px 0;
+    letter-spacing: -0.2px;
+}
+
+.ui-card-desc {
+    font-size: 15px;
+    color: #4f4f4f;
+    line-height: 1.55;
+    margin: 0;
+    font-weight: 400;
+}
+
+/* Call To Action Block Setup */
+.ui-action-row {
+    display: flex;
+    justify-content: center;
+}
+
+.ui-cta-button {
+    background: #ff6a4d;
+    color: #ffffff;
+    font-size: 19px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    padding: 18px 0;
+    width: 100%;
+    max-width: 530px;
+    text-align: center;
+    cursor: pointer;
+    letter-spacing: -0.2px;
+    box-shadow: 0px 4px 12px rgba(255, 106, 77, 0.2);
+    transition: background-color 0.15s ease-in-out;
+}
+
+.ui-cta-button:hover {
+    background: #f15b3d;
+}
+
+/* Exact Structural Scaling Profiles */
+@media (max-width: 991px) {
+    .ui-mainheading {
+        font-size: 38px;
+    }
+
+    .ui-subheading {
+        font-size: 26px;
+    }
+
+    .ui-grid {
+        gap: 20px;
+    }
+
+    .ui-card {
+        padding: 28px 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .ui-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .ui-header {
+        margin-bottom: 40px;
+    }
+
+    .ui-mainheading {
+        font-size: 32px;
+    }
+
+    .ui-subheading {
+        font-size: 22px;
+    }
+
+    .ui-cta-button {
+        max-width: 100%;
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ui-wrapper {
+        padding: 48px 16px;
+    }
+
+    .ui-card {
+        padding: 24px 20px;
+    }
+
+    .ui-mainheading {
+        font-size: 26px;
+    }
+
+    .ui-subheading {
+        font-size: 18px;
+    }
+}

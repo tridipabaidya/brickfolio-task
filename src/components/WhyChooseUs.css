@@ -1,0 +1,115 @@
+/* Container Background & Layout Frame */
+.brickfolio-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 24px;
+    background-color: #ffece2;
+    /* Matching the soft peach backdrop precisely */
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+
+/* Master Section Typography Header */
+.brickfolio-heading {
+    font-size: 38px;
+    font-weight: 700;
+    color: #111111;
+    margin: 0 0 48px 0;
+    letter-spacing: -0.5px;
+}
+
+.highlight-text {
+    color: #000000;
+    font-weight: 800;
+}
+
+/* 3-Column Responsive Grid Architecture */
+.brickfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* Card Structure and Style Attributes */
+.brickfolio-card {
+    background: #ffffff;
+    border: 1px solid #f6dcd0;
+    border-radius: 24px;
+    /* Rounded card borders matching the layout blueprint */
+    padding: 40px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 8px 20px rgba(224, 110, 66, 0.04);
+    box-sizing: border-box;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.brickfolio-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 12px 24px rgba(224, 110, 66, 0.08);
+}
+
+/* Fixed Sizing Framework for Vector Icons */
+.brickfolio-icon-container {
+    width: 72px;
+    height: 72px;
+    color: #ff6a00;
+    /* Original brand orange color */
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Card Content Typography Elements */
+.brickfolio-card-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
+    margin: 0 0 14px 0;
+    line-height: 1.3;
+}
+
+.brickfolio-card-desc {
+    font-size: 14px;
+    color: #4f4f4f;
+    line-height: 1.6;
+    margin: 0;
+    font-weight: 400;
+    text-align: center;
+}
+
+/* Responsive Scaling Breakpoints Layout Configuration */
+@media (max-width: 1024px) {
+    .brickfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    .brickfolio-heading {
+        font-size: 32px;
+        margin-bottom: 36px;
+    }
+}
+
+@media (max-width: 680px) {
+    .brickfolio-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .brickfolio-wrapper {
+        padding: 40px 16px;
+    }
+
+    .brickfolio-card {
+        padding: 32px 24px;
+    }
+
+    .brickfolio-heading {
+        font-size: 28px;
+    }
+}

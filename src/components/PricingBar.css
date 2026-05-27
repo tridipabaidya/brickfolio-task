@@ -1,0 +1,119 @@
+/* OUTER SECTION */
+
+.pricing-section {
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding-top: 400px;
+
+    padding-bottom: 0;
+
+    background: white;
+}
+
+/* MAIN BAR */
+
+.pricing-bar-wrapper {
+
+    width: 906px;
+
+    height: 100px;
+
+    background: linear-gradient(90deg,
+            #3d4448 0%,
+            #1d1d1d 45%,
+            #111111 100%);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-around;
+
+    padding: 0 12px;
+
+    box-sizing: border-box;
+}
+
+/* LEFT SIDE */
+
+.price-info-group {
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+.price-row {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 4px;
+}
+
+.current-price {
+
+    color: white;
+
+    font-size: 70px;
+
+    font-weight: 800;
+
+    line-height: 1;
+}
+
+.original-price {
+
+    color: #8e8e8e;
+
+    font-size: 41px;
+
+    text-decoration: line-through;
+
+    margin-top: 2px;
+}
+
+.urgency-subtext {
+
+    color: #9f9f9f;
+
+    font-size: 18px;
+
+    margin: 1px 0 0 0;
+
+    letter-spacing: 0.3px;
+}
+
+/* BUTTON */
+
+.schedule-now-btn {
+
+    background: #ff6b1a;
+
+    color: white;
+
+    border: none;
+
+    height: 62px;
+    width: 363px;
+
+    /* padding: 0 16px; */
+
+    font-size: 41px;
+
+    font-weight: 700;
+
+    border-radius: 11px;
+    font-style: Poppins;
+    cursor: pointer;
+}
